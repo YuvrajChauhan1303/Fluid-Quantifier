@@ -53,7 +53,7 @@ void loop()
 {
     char c;
     irValue = digitalRead(IR_PIN);
-    if (Serial.available()>0) { // check if there is any data available from Arduino Uno 
+    if (Serial.available()>0) { // check if there is any data available from NODE MCU
     c = Serial.read();
     }
   // If the IR sensor does not detect an object, turn off the relay
