@@ -1,11 +1,11 @@
-var ss = SpreadsheetApp.openById('1DWYqfMzsWD5lPN-lNAc3c4Snf6OT7AmEAp_csTeyXDA'); //Add Script Id
+var ss = SpreadsheetApp.openById('your spreadsheets s\Script ID '); //Add Script Id
 
-//Full Link: https://docs.google.com/spreadsheets/d/1DWYqfMzsWD5lPN-lNAc3c4Snf6OT7AmEAp_csTeyXDA/edit#gid=0
-//Script ID : 1DWYqfMzsWD5lPN-lNAc3c4Snf6OT7AmEAp_csTeyXDA
+//Full Link: https://docs.google.com/spreadsheets/d/1DWYqfMzsWD5lPN-lNAc3c4Sbrrthnf6OT7AmEAp_csTeyXDA/edit#gid=0
+//Script ID : 1DWYqfMzsWD5lPN-lNAc3c4Snf6OT7AmEAp_csTeyXfgDA
 //Hint: After '/d/' and before /edit#gid=0
 
 var sheet = ss.getSheetByName('Sheet1'); // Add Sheet Name
-var timezone = "Mumbai"
+var timezone = "Mumbai" 
 var final_time = 5*60 + 30;
 
 function doGet(e){
@@ -19,6 +19,7 @@ function doGet(e){
   var first_name    = stripQuotes(e.parameters.data2);
   var last_name     = stripQuotes(e.parameters.data3);
   var curent_session = stripQuotes(e.parameter.data4);
+  //Add functions if you want more sections on this projectin this spreadsheet 
   var nextRow = sheet.getLastRow() + 1;
   sheet.getRange("A" + nextRow).setValue(Curr_Date);
   sheet.getRange("B" + nextRow).setValue(Curr_Time);
