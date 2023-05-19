@@ -1,4 +1,9 @@
 var ss = SpreadsheetApp.openById('1DWYqfMzsWD5lPN-lNAc3c4Snf6OT7AmEAp_csTeyXDA'); //Add Script Id
+
+//Full Link: https://docs.google.com/spreadsheets/d/1DWYqfMzsWD5lPN-lNAc3c4Snf6OT7AmEAp_csTeyXDA/edit#gid=0
+//Script ID : 1DWYqfMzsWD5lPN-lNAc3c4Snf6OT7AmEAp_csTeyXDA
+//Hint: After '/d/' and before /edit#gid=0
+
 var sheet = ss.getSheetByName('Sheet1'); // Add Sheet Name
 var timezone = "Mumbai"
 var final_time = 5*60 + 30;
@@ -29,12 +34,4 @@ function doGet(e){
 function stripQuotes( value ) {
   return value.toString().replace(/^["']|['"]$/g, "");
 }
-
-function doPost(e) {
-  var val = e.parameter.value;
-  
-  if (e.parameter.value !== undefined){
-    var range = sheet.getRange('A2');
-    range.setValue(val);
-  }
 }
