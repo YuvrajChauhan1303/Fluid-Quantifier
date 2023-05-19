@@ -1,3 +1,9 @@
+/* ------------------------------------------------------------------------
+ * Created by: Harshit Chouhan
+ * Created on: 29 April, 2023
+ * 
+ * ------------------------------------------------------------------------*/
+
 var ss = SpreadsheetApp.openById('your spreadsheets s\Script ID '); //Add Script Id
 
 //Full Link: https://docs.google.com/spreadsheets/d/1DWYqfMzsWD5lPN-lNAc3c4Sbrrthnf6OT7AmEAp_csTeyXDA/edit#gid=0
