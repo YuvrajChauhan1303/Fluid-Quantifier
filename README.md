@@ -27,7 +27,7 @@ Step-By-Step Instructions to Build the Fluid Quantifier:
     
     -YFS-201 Hall Effect Sensor
     
-    -MRCC522 RFID Scanner Kit
+    -MFRC522 RFID Scanner Kit
     
     -Arduino IDE
     
